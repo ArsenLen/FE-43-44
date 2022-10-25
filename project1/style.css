@@ -1,0 +1,27 @@
+h1 {
+    color: green; /* цвет текста */
+    text-align: center; /* центрирование текста */
+}
+p {
+    color: white;
+    font-size: 24px; /* размер шрифта */
+    text-align: center;
+}
+img {
+    width: 500px; /* ширина */
+    display: block; /* делаем элемент блоком */
+    margin: auto;
+}
+article {
+    background-color: seagreen; /* цвет фона блока */
+    width: 85%;
+    margin: auto; /* центрирование блока */
+    padding: 30px; /* внутренний отступ */
+}
+/* 
+    селектор {
+        свойтсво: значение свойства;
+    }
+    Задание: поменять цвет у тегов <p>. Поместить тег p по центру
+    
+*/

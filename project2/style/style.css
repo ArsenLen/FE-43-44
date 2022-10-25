@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+div {
+    width: 200px; /* ширина */
+    height: 200px; /* высота */
+    background-color: khaki;
+    margin: 10px; /* отступы для элемента со всех сторона */
+}
+.item-1 {
+    background-color: blue;
+}
+.item-2 {
+    margin-left: 200px;
+    background-color: red;
+}
+/* 
+    селектор по тегу - h1, article, main
+    селектор по классу - .item-1
+
+    margin-top - сверху
+    margin-left - отступ слева
+    margin-right - отступ справа
+    margin-bottom - отступ снизу
+
+    ДЗ для всех! Скачать 8 картинок на одну тему в папку img project2
+    ДЗ*. С помощью свойства background-image добавить 8 картинок в 8 div.  
+*/
