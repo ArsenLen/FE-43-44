@@ -1,27 +1,87 @@
 * {
     margin: 0;
+    box-sizing: border-box; /* padding внутри квадрата, а не снаружи */
+}
+header {
+    height: 60px;
+    background-color: #eceaea;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+h1 {
+    text-align: center;
+}
+main {
+    display: flex; /* позиционирование элементов по правилам флексбоксов */ 
+    flex-wrap: wrap; /* отменяет уменьшение элементов и размещение в одну строку */
+    justify-content: center; /* расположение квадратов по центру */
+    background-color: #f2f2f2;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    border-radius: 8px; /* закруглить края блока */
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
 }
 div {
-    width: 200px; /* ширина */
-    height: 200px; /* высота */
-    background-color: khaki;
-    margin: 10px; /* отступы для элемента со всех сторона */
+    width: calc(50% - 20px); /* ширина */
+    height: 300px; /* высота */
+    margin: 10px;
+    background-size: cover; /* cover - масштабирует по ширине, contain - масштабируем по высоте */
+    background-repeat: no-repeat; /* если картинка меньше блока, то не повторять ее */
+    background-position: center; /* позволяет поместить картинку по центру */ 
+    border: 1px solid grey;
+    border-radius: 8px;
+    transition: 1s;
+}
+div:hover {
+    transform: scale(1.05);
 }
 .item-1 {
-    background-color: blue;
+    background-image: url(../images/10.\ Цветы.jpg); /* добавляем картинку */
 }
 .item-2 {
-    margin-left: 200px;
-    background-color: red;
+    background-image: url(../images/11.\ Закат.jpg);
+}
+.item-3 {
+    background-image: url(../images/12.\ Вода.jpg);
+}
+.item-4 {
+    background-image: url(../images/13.\ Камни.jpg);
+}
+.item-5 {
+    background-image: url(../images/14.\ Листва.jpg);
+}
+.item-6 {
+    background-image: url(../images/15.\ Облака.jpg);
+}
+.item-7 {
+    background-image: url(../images/16.\ Город.jpg);
+}
+.item-8 {
+    background-image: url(../images/9.\ Пустыня.jpg);
 }
 /* 
+
+
     селектор по тегу - h1, article, main
     селектор по классу - .item-1
 
+    Margin - внешний отступ, между элементами
     margin-top - сверху
     margin-left - отступ слева
     margin-right - отступ справа
     margin-bottom - отступ снизу
+
+    Padding - внутренний отступ, внутри одного элемента
+    padding-top - сверху
+    padding-left - отступ слева
+    padding-right - отступ справа
+    padding-bottom - отступ снизу
+
+    padding: Npx; Npx- для всех сторон
+    padding: V H; V - по вертикали (сверху и снизу), H - по горизонтали (справа и слева)
+    padding: T H B; T - отступ сверху, H (справа и слева), B - отступ снизу
+    padding: T R B L; Top - сверху, Right - справа, Bottom - снизу, Left - слева
 
     ДЗ для всех! Скачать 8 картинок на одну тему в папку img project2
     ДЗ*. С помощью свойства background-image добавить 8 картинок в 8 div.  
