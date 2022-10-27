@@ -2,6 +2,9 @@
     margin: 0;
     box-sizing: border-box; /* padding внутри квадрата, а не снаружи */
 }
+body {
+    font-family: 'Lobster', cursive;
+}
 header {
     height: 60px;
     background-color: #eceaea;
@@ -10,6 +13,7 @@ header {
 }
 h1 {
     text-align: center;
+    font-weight: 500; /* жирность шрифта */
 }
 main {
     display: flex; /* позиционирование элементов по правилам флексбоксов */ 
@@ -22,6 +26,10 @@ main {
     border-radius: 8px; /* закруглить края блока */
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
 }
+p {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+}
 div {
     width: calc(50% - 20px); /* ширина */
     height: 300px; /* высота */
@@ -31,7 +39,7 @@ div {
     background-position: center; /* позволяет поместить картинку по центру */ 
     border: 1px solid grey;
     border-radius: 8px;
-    transition: 1s;
+    transition: 1s; /* время анимации */
 }
 div:hover {
     transform: scale(1.05);
@@ -61,6 +69,8 @@ div:hover {
     background-image: url(../images/9.\ Пустыня.jpg);
 }
 /* 
+
+    Внутрь main добавить тег p и поменять его шрифт на другой
 
 
     селектор по тегу - h1, article, main
