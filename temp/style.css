@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh; /* 100% высоты относительно родительского элемента */
+}
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    margin: 10px;
+}
+
+/* 
+    vw, vh
+    view width - вся ширина окна браузера, включая скролл
+    view height - вся высота
+*/
