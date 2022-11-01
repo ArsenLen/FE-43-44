@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form {
+    background: #EEEFF1;
+    padding: 100px 0;
+}
+.form-title {
+    font-size: 32px;
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+.form-descr {
+    font-size: 16px;
+    width: 30%;
+    text-align: center;
+    margin: 50px auto 65px;
+    /* margin-bottom: 65px; */
+}
+form {
+    width: 30%;
+    margin: auto;
+}
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="email"] {
+    width: 45%;
+    padding: 20px;
+    border: none; /* убираем границу inputa */
+    outline: none; 
+}
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    height: 55px;
+    background: #34547A;
+    border: none;
+    outline: none;
+    padding: 0 45px;
+    text-transform: uppercase; /* сделать буквы заглавными  */
+    color: white;
+}
+/* 
+    ctrl + A 
+    ctrl + K + F
+    alt + shift + F
+    .className .form-title .form
+    form, h1, input, h4
+    margin: auto; центрирование - отступ слева и справа равный
+    margin: 50px auto 65px; - вверху 50, справа и слева - 0, снизу 65px
+*/
