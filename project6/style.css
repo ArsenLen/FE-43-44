@@ -1,0 +1,22 @@
+main {
+    width: 600px;
+}
+.skill-scale {
+    height: 20px;
+    background-color: darkgray;
+}
+.skill-scale-internal {
+    width: 80%;
+    height: 20px;
+    background-color: midnightblue;
+}
+/* 
+    color - цвет текста
+    background-color - цвет блока
+    
+    aspect-ratio.
+    соотношение сторон
+    16/9
+    16 - ширина
+    9 - высота
+*/

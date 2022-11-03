@@ -3,6 +3,44 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* мои навыки */
+.skills {
+    padding: 100px 0;
+}
+.skills-wrapper {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-info {
+    width: 40%;
+}
+.skills-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.skill {
+    margin-bottom: 30px;
+}
+.skill-name {
+    color: #727272;
+    margin-bottom: 20px;
+}
+.skill-scale {
+    height: 5px;
+    background: #C4C4C4;
+}
+.skill-scale-internal {
+    width: 80%;
+    height: 5px;
+    background: #34547A;
+}
+.skill-image {
+    width: 50%;
+    object-fit: cover;
+}
 /* как я работаю */
 .process {
     background: #EEEFF1;
@@ -14,20 +52,24 @@
 }
 .process-descr {
     width: 30%;
-    margin: auto;
     color: #727272;
     text-align: center;
-    background-color: #d1ea5f;
+    margin: 50px auto 60px; /* 50px -сверху, auto - центрировать справа слева, 60px - снизу */
+}
+.process-video {
+    width: 60%;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: auto;
 }
 /* projects */
 .projects {
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
 .projects-item {
     width: 25%; 
-    height: 50%; /* 25% */
+    aspect-ratio: 1/1;
     background-size: cover; /* cover - полная ширина, высота автоматически. contain - полная высота, а ширина масштабируется  */
 }
 .sticker {
