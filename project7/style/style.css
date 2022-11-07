@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 70%;
+    margin: auto;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 
+    сделать для каждой иконки, кроме последней отступ справа 55px
+*/
+.header-icon:not(:last-child) { /* выбор всех элементов, кроме последнего */ 
+    margin-right: 55px;
+}
+/* intro */
+.intro {
+    background-color: #4FBFA5;
+    padding: 25px 0 60px;
+}
+.intro-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+.nav-link:last-child {
+    background-color: white;
+    color: black; /* цвет текста внутри кнопки черный */
+    padding: 10px 50px;
+}
+.intro-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.intro-img {
+    width: 60%;
+}
+.intro-text {
+    width: 30%;
+}
+.intro-title {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+}
+.intro-descr {
+    font-size: 14px;
+    font-style: italic;
+    margin: 40px 0;
+}
+.intro-btn {
+    padding: 15px 25px;
+    background-color: #00868A;
+    text-transform: uppercase; /* заглавные */
+    border: none;
+    outline: none;
+    color: white;
+    font-style: italic;
+}

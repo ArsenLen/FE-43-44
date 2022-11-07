@@ -2,6 +2,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Inter', sans-serif;
+}
 header {
     height: 70px;
     background: #1ABC9C;
@@ -22,4 +25,67 @@ a {
 }
 .social-icon {
     margin-right: 20px;
+}
+/* О нас */
+.intro {
+    display: flex;
+}
+.intro-img {
+    width: 50%;
+}
+.intro-info {
+    display: flex;
+    flex-direction: column; /* just-cont - вертикальная ось, а align-items-гориз */
+    align-items: center;
+    justify-content: center;
+    padding: 0 70px;
+    width: 50%;
+}
+.intro-title {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+/* проекты */
+.projects {
+    background: #DCFFEB;
+    padding: 125px 0;
+}
+.projects-wrapper {
+    width: 90%;
+    margin: auto;
+}
+.projects-title {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.projects-list {
+    display: flex;
+    justify-content: space-between;  
+}
+.project-img {
+    width: calc(33% - 40px);
+}
+.project-img:not(:last-child) {
+    margin-right: 40px;
+}
+.project {
+    width: 33%;
+    aspect-ratio: 1.15/1;
+    background-image: url(./images/project-img.png);
+    background-size: contain;
+}
+.project-hover {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 35px 15px;
+    opacity: 0;
+}
+.project-hover:hover {
+    opacity: 1;
+    cursor: grab;
+}
+.project-title, .project-descr {
+    color: white;
 }
