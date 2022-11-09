@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Ella", "last": "Welch" },
+      "location": {
+        "street": { "number": 8192, "name": "O'Connell Street" },
+        "city": "Cavan",
+        "state": "Tipperary",
+        "country": "Ireland",
+        "postcode": 44654,
+        "coordinates": { "latitude": "-2.0190", "longitude": "54.0843" },
+        "timezone": { "offset": "+3:30", "description": "Tehran" }
+      },
+      "email": "ella.welch@example.com",
+      "login": {
+        "uuid": "5f29d83d-68f3-4462-af60-169332ce6789",
+        "username": "angrybutterfly476",
+        "password": "goten",
+        "salt": "G0nsxlh9",
+        "md5": "31a727c3e361e0e3f629364d880a4260",
+        "sha1": "eba47d0421cea364ba945f55412dcc1c7670e4dc",
+        "sha256": "5b0f21de0bae7bf8edbd877a974769a8511a4d4970334f2a3e229f24c188ba50"
+      },
+      "dob": { "date": "1977-05-18T02:38:57.082Z", "age": 45 },
+      "registered": { "date": "2006-02-02T23:03:50.424Z", "age": 16 },
+      "phone": "011-784-4556",
+      "cell": "081-375-8127",
+      "id": { "name": "PPS", "value": "2019450T" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/18.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/18.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/18.jpg"
+      },
+      "nat": "IE"
+    }
+  ],
+  "info": {
+    "seed": "c99ae910a3622e8b",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
