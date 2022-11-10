@@ -294,13 +294,13 @@
 // console.log(nums[4]) // 50
 // ____________________________
 // Задача. вывести каждое число в консоли
-let nums = [10, 20, 30, 40, 50] 
+// let nums = [10, 20, 30, 40, 50] 
 // nums = [0 : 10, 1 : 20, 2 : 30, 3 : 40, 4 : 50]
 // Пока i меньше чем количество элемнтов в массив, в консоли отображать каждый элемент
 // arr- любой массив arr.length - свойство, которое отображает количество элементов в массиве
-for(let i = 0; i < nums.length; i++) {
-    console.log(nums[i]) 
-}
+// for(let i = 0; i < nums.length; i++) {
+//     console.log(nums[i]) 
+// }
 // nums.length = 5
 // 1. i = 0, 0 < 5 ? - true(меньше), console.log(nums[0]) - console.log(10), i++
 // 2. i = 1, 1 < 5 ? - true(меньше), console.log(nums[1]) - console.log(20), i++
@@ -314,13 +314,13 @@ for(let i = 0; i < nums.length; i++) {
 
 // Задача. Есть массив arr. В консоль вывести числа из массива, которые больше 50
 // 1. сравнивать в условии нужно arr[i] > 50
-let arr = [32, 51, 60, 78, 105, 14, 10]  
+// let arr = [32, 51, 60, 78, 105, 14, 10]  
 
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] >= 50) {
-        console.log(arr[i]);
-    }
-}
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] >= 50) {
+//         console.log(arr[i]);
+//     }
+// }
 
 
 // ДЗ.1. Есть массив [-10, 50, 60, 0, -100, 125]. Вывести в консоль только положительные+ числа.
@@ -400,3 +400,385 @@ for (let i = 0; i < arr.length; i++) {
     шаг - обновление, увеличение. наше действие должно выполняться с определенным промежутком
 */
 
+
+// let num = [-10, 50, 60, 0, -100, 125]
+// let mult = 1
+
+// for (let i = 0; i < num.length; i++) {
+//   if (num[i] < 0) {
+//     mult *= num[i];
+//   }
+// }
+
+// console.log(mult);
+
+// _______________________
+
+// let arr4 = [-10, 50, 60, 0, -100, 125]
+// let negative = []
+// let total = 1
+// for (let i = 0; i < arr4.length; i++) {
+//     if (arr4[i] < 0) {
+//         negative.push(arr4[i])
+//     }
+// }
+
+// for(let i = 0; i < negative.length; i++){
+//     total *= negative[i] 
+// }
+// console.log(total)
+
+
+// let num = [-10, 50, 60, 0, -100, 125]
+// let sum = 1;
+// for (let i = 0; i < num.length; i++) 
+//     if (num[i] < 0) {
+//         sum *= num[i]
+// }
+// console.log(sum);
+// мы умножаем число из массива только если оно меньше 0
+
+
+/* ДЗ.5
+    Запросить 10 чисел. 
+    let num1 = +prompt("enter num 1")
+    let num2 = +prompt("enter num 2")
+    let num3 = +prompt("enter num 3")
+
+    let nums = [100, 500] // 700, 1000, 500 --> [100, 500, 700, 1000, 500]
+    nums.push(num1, num2, num3)
+    console.log(nums);
+*/
+// let nums = [100, 500]
+
+// for(let i = 0; i < 3; i++) {
+//     nums.push(+prompt("Введите число"))
+// }
+
+// console.log(nums)
+
+// 1. num = 5,
+// 2. num = 10
+
+// ____________________________________
+/*
+    Массивы - это частный случай объекта
+    Объект - те же самые объекты, которые вы видите вокруг и у котороых есть разные свойства
+
+*/
+
+// let user = {
+//     name : "Arsen",
+//     age : 24
+// }
+
+// let user1 = [
+//     "Arsen",
+//     24
+// ]
+
+/*
+    let obj = {
+        key : value
+    }
+    let obj = {
+        ключ : значение
+    }
+    Пара ключ+значение - это свойство объекта
+*/
+// let laptop = {
+//     color : "black",
+//     mark : "Acer",
+//     model : "45564GG",
+//     size : "15.6",
+//     tech : {
+//         ozu : "16GB",
+//         proccessor : "Inter i7",
+//         videocard : "Nvidia"
+//     },
+//     price : 50000
+// }
+// let greeting = "Hello" -> <h1>greeting</h1>, <div>laptop</div>
+// console.log(laptop.color) // 
+// // в консоли вывести значение процессора - "Inter i7"
+// console.log(laptop.tech.proccessor) // "Intel i7"
+
+// let greeting = "Hello World"
+// console.log(`<p>greeting</p>`)
+
+// console.log(`<div class="laptop">
+//                 <h1>${laptop.model}</h1>
+//                 <p>${laptop.color}</p>
+//                 <p>${laptop.price}</p>
+//             </div>`)
+
+// // Hello, Arsen
+// let name = "Arsen"
+
+// console.log(`Hello, ${name}`)
+/*
+
+    <div class="laptop">
+        <h1>${model...}</h1> 
+        <p>$Color</p>
+        <p>Price</p>
+    </div>
+
+    `` - шаблонная строка, строка литералов. Позволяет объединить строку и js значение(переменная, функция)
+    ${} - объявление сущности JS внутри строки. Исплозуется для того, чтобы
+    конкатенировать(склеить) строку и переменную js.
+*/
+// Вывести для всех ноутбуков одинаковую разметку в console
+// let laptop = {
+//     color : "black",
+//     mark : "Acer",
+//     model : "45564GG",
+//     size : "15.6",
+//     tech : {
+//         ozu : "16GB",
+//         proccessor : "Inter i7",
+//         videocard : "Nvidia"
+//     },
+//     price : 50000
+// }
+// console.log(laptop.mark)
+// console.log(laptop.keyboard) // ошибка, потому что такого свойства нет
+
+// Задачи на вывод разметки в консоли со значениями из массива объектов
+// let laptops = [
+//     {
+//         color : "black",
+//         mark : "Acer",
+//         model : "45564GG",
+//         size : "15.6",
+//         tech : {
+//             ozu : "16GB",
+//             proccessor : "Inter i7",
+//             videocard : "Nvidia"
+//         },
+//         price : 50000
+//     },
+//     {
+//         color : "white",
+//         mark : "Asus",
+//         model : "G752ER",
+//         size : "17",
+//         tech : {
+//             ozu : "8GB",
+//             proccessor : "Inter i5",
+//             videocard : "Nvidia"
+//         },
+//         price : 65000
+//     }
+// ]
+// arr = [{}, {}, {}, {}] - arr[2]
+// Отобразить в консоли HTML разметку для обоих ноутбуков
+// mark : "Asus",
+// как обратиться к массиву.
+
+// Внутри log() перед div отобразить второй div, в котором будет информация о первом
+// console.log(`
+//     <div>
+//         <h1>${laptops[0].price}</h1>
+//         <p>${laptops[0].mark}</p>
+//         <p>${laptops[0].color}</p>
+//     </div>
+//     <div>
+//         <h1>${laptops[1].price}</h1>
+//         <p>${laptops[1].mark}</p>
+//         <p>${laptops[1].color}</p>
+//     </div>
+// `) 
+// ___________________________ 
+// Запятые после каждого элемента массива - обязательны
+// [1, 2, 3, 5, 6, 7, 10]
+// [{}, {}, {}, {}]
+let instaPosts = [
+    {
+        title : "Мое первое фото",
+        descr : "Фотография была сделана в Берлине",
+        author : "rsnyuspv",
+        likes : 100,
+        img : "https://img1.jpg"
+    },
+    {
+        title : "Супер фото",
+        descr : "Фотография была сделана в Альпах",
+        author : "Ruslan",
+        likes : 222,
+        img : "https://img2.png"
+    },
+    {
+        title : "Мое супер-пупер фото",
+        descr : "Фотография была сделана в Гималаях",
+        author : "Darina",
+        likes : 405,
+        img : "https://img3.png"
+    },
+    {
+        title : "Мое лучшее фото",
+        descr : "Фотография была сделана на Гавайях",
+        author : "Dmitry",
+        likes : 357,
+        img : "https://img3.png"
+    },
+]
+// Решение задачи вручную. Проблема в том, что если будет 100 постов, нам придется 100 раз копировать
+// console.log(`
+//     <div class="insta-post">
+//         <h1>${instaPosts[0].title}</h1>
+//         <p>${instaPosts[0].descr}</p>
+//         <p>${instaPosts[0].author}</p>
+//         <p>${instaPosts[0].likes}</p>
+//         <img src="${instaPosts[0].img}" alt="фото в инсте">
+//     </div>
+//     <div class="insta-post">
+//         <h1>${instaPosts[1].title}</h1>
+//         <p>${instaPosts[1].descr}</p>
+//         <p>${instaPosts[1].author}</p>
+//         <p>${instaPosts[1].likes}</p>
+//         <img src="${instaPosts[1].img}" alt="фото в инсте">
+//     </div>
+//     <div class="insta-post">
+//         <h1>${instaPosts[2].title}</h1>
+//         <p>${instaPosts[2].descr}</p>
+//         <p>${instaPosts[2].author}</p>
+//         <p>${instaPosts[2].likes}</p>
+//         <img src="${instaPosts[2].img}" alt="фото в инсте">
+//     </div>
+//     <div class="insta-post">
+//         <h1>${instaPosts[3].title}</h1>
+//         <p>${instaPosts[3].descr}</p>
+//         <p>${instaPosts[3].author}</p>
+//         <p>${instaPosts[3].likes}</p>
+//         <img src="${instaPosts[3].img}" alt="фото в инсте">
+//     </div>
+// `);
+
+// Задача. Вывести все элементы массива instaPosts в console с помощью цикла
+// Решение с помощью цикла. Будет работать для любого количества постов.
+
+// = - присваивание. num = 10
+// == - оператор сравнение. num == 10 - true, false - если не равны
+for(let i = 0; i < instaPosts.length; i++) {
+    if(instaPosts[i].author == "Dmitry" || instaPosts[i].author == "Darina") {
+        console.log(`
+        <div class="insta-post">
+            <h1>${instaPosts[i].title}</h1>
+            <p>${instaPosts[i].descr}</p>
+            <p>${instaPosts[i].author}</p>
+            <p>${instaPosts[i].likes}</p>
+            <img src="${instaPosts[i].img}" alt="фото в инсте">
+        </div>
+        `)
+    } 
+}
+
+// Задача. Выводить только те элементы массива posts, в которых количество лайков > 250,
+// добавив условие if 
+
+
+// instaPosts.length = 3
+// 1. i = 0, 0 < 4 -true, console.log(<div>${instaPosts[0].title}</div>)..., i++
+// 2. i = 1, 1 < 4 - true, console.log(<div>${instaPosts[1].title}</div>)..., i++
+// 3. i = 2, 2 < 4 - true,  console.log(<div>${instaPosts[2].title}</div>)
+// 4. i = 3, 3 < 4 - false,  console.log(<div>${instaPosts[3].title}</div>)
+
+// Задача 1. Вывести в консоли:
+// а) все ноутбуки. лучше с разметкой HTML
+// б) все ноутбуки, цена которых больше 40000.
+// в) Посчитать сумму цен всех ноутбуков. Итого.
+
+let laptops = [
+    {
+        mark : "Acer",
+        price : 25000
+    },
+    {
+        mark : "Apple",
+        price : 37000
+    },
+    {
+        mark : "Asus",
+        price : 125500,
+    },
+    {
+        mark : "HP",
+        price : 42000
+    },
+    {
+        mark : "Samsung",
+        price : 52000
+    }
+]
+
+// Задача.2
+// а) Вывести все ноутбуки, у которых есть категория "laptop"
+// б) Вывести все ноутбуки, у которых категория "premium"
+// в) Вывести все ноутбуки, у которых категория "tech"
+let laptopsSecond = [
+    {
+        mark : "Acer",
+        category : ["laptop", "tech"],
+        price : 25000
+    },
+    {
+        mark : "Apple",
+        category : ["notebook", "tech"],
+        price : 37000
+    },
+    {
+        mark : "Asus",
+        category : ["computer", "premium"],
+        price : 125500,
+    },
+    {
+        mark : "HP",
+        category : ["computer", "tech"],
+        price : 42000
+    },
+    {
+        mark : "Samsung",
+        category : ["notebook", "premium"],
+        price : 52000
+    }
+]
+
+// Задача 3.
+// Запрашивать у пользователя Марку и Цену ноутбука три раза.
+// Марку и цену ноутбука объединять в объект и добавлять(push) в массив laptops=[]-пустой
+// Итого будет массив из трех объектов.
+
+// Задача 4. 
+// У пользователя с prompta запрашивать марку/цену. // По его ответу в консоли ввыводить ноутбуки с разметкой.
+// Какую марку вы бы хотели? -Acer. Выводим хар-ки Acer
+// На какую цену вы рассчитываете? -50000. Выводить все ноутбуки, которые удовл-т(меньше) этой цене
+
+
+let laptopsSecond1 = [
+    {
+        mark : "Acer",
+        category : ["laptop", "tech"],
+        price : 25000
+    },
+    {
+        mark : "Apple",
+        category : ["notebook", "tech"],
+        price : 37000
+    },
+    {
+        mark : "Asus",
+        category : ["computer", "premium"],
+        price : 125500,
+    },
+    {
+        mark : "HP",
+        category : ["computer", "tech"],
+        price : 42000
+    },
+    {
+        mark : "Samsung",
+        category : ["notebook", "premium"],
+        price : 52000
+    }
+]
