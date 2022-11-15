@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* модель размера блоков. padding внутри элмента и не добавляет ему ширину и высоту */
+}
+body {
+    height: 100vh; /* vh - view height. 1vh - одна сотая всей высоты браузреного окна. 100vh - вся высота */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 30%;
+    background-color: khaki;
+    padding: 40px;
+    border-radius: 8px;
+}
+button {
+    width: 100%;
+    border: none;
+    outline: none; /* при клике у input и button появляется граница. мы ее сбрасываем */
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(160, 160, 160);
+}
+button:not(:last-child) {
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: rgb(139, 139, 139); 
+    cursor: pointer;  
+}
