@@ -78,10 +78,13 @@ let buttonImg = document.querySelector("#img")
 buttonImg.addEventListener("click", function() {
     document.body.style.background = "url(./image.jpg)"
 })
-
+/* 
+ДЗ-------------------------------------ЛЮДМИЛА, ВОТ ТУТ 
 // выбрать все кнопки
 // в цикле каждой повесить слушатель
 // при нажатию на каждую в консоли отображать "на меня кликнули"
+
+*/
 
 // Задача1. При нажатии на картинку, цвета фона не отрабатывают. Починить!
 // Задача2. Создать кнопку <button class="item" id="random">Random</button> и
