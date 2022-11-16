@@ -58,24 +58,30 @@
 */
 
 // Задача. При нажатии на кнопку red, менять цвет фона body на красный
+// Задача.При нажатии на кнопку red, менять цвет фона body на красный и в тег h1 добавлять название цвета
 
 let buttonRed = document.querySelector("#red")
+// console.log(buttonRed.innerText) // Red
 
 buttonRed.addEventListener("click", function() {
-    document.body.style.backgroundColor = "red"
+    document.body.style.background = "red"
 })
 
 let buttonGreen = document.querySelector("#green")
 
 buttonGreen.addEventListener("click", function() {
-    document.body.style.backgroundColor = "green"
+    document.body.style.background = "green"
 })
 
 let buttonImg = document.querySelector("#img")
 
 buttonImg.addEventListener("click", function() {
-    document.body.style.backgroundImage = "url(./image.jpg)"
+    document.body.style.background = "url(./image.jpg)"
 })
+
+// выбрать все кнопки
+// в цикле каждой повесить слушатель
+// при нажатию на каждую в консоли отображать "на меня кликнули"
 
 // Задача1. При нажатии на картинку, цвета фона не отрабатывают. Починить!
 // Задача2. Создать кнопку <button class="item" id="random">Random</button> и
@@ -86,12 +92,3 @@ buttonImg.addEventListener("click", function() {
 
 // Задача. При нажатии на кнопку green менять цвет фона body на зеленый
 
-/* 
-    addEventListener() - метод, позволяющий повесить(добавить) слушатель события.
-    addEventListener() - функция, но т.к она находится внутри объекта, то называется методом.
-    Он принимает два аргумента. 
-    1й - тип события - "click", "submit", "focus"
-    2й - функция(коллбэк функция - функция обратного вызова) 
-        - действие, которое должно произойти в ответ на событие
-    анонимная функция - функция без названия
-*/
