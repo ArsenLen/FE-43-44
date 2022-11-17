@@ -78,6 +78,8 @@ let buttonImg = document.querySelector("#img")
 buttonImg.addEventListener("click", function() {
     document.body.style.background = "url(./image.jpg)"
 })
+
+
 /* 
 ДЗ-------------------------------------ЛЮДМИЛА, ВОТ ТУТ 
 // выбрать все кнопки
