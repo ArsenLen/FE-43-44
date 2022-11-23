@@ -1,0 +1,29 @@
+.active {
+    height: 100vh;
+    background-color: violet;
+}
+p {
+    font-size: 18px;
+    text-align: center;
+}
+.red {
+    color: red;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.todo {
+    width: 40%;
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.line {
+    text-decoration: line-through;
+}
+/*
+    в css написать код, который разместит карточки по два в одной строке
+*/
