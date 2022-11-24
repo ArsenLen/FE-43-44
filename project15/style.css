@@ -49,9 +49,21 @@ input[type="submit"] {
     border-radius: 20px;
     color: white;
     font-size: 25px;
+    position: relative;
 }
 .product:not(:last-child) {
     margin-bottom: 30px;
+}
+.delete-btn {
+    display: none; /* скрыть элемент */
+    width: 30px;
+    height: 30px;
+    background-color: #FC7171;
+    border-radius: 50%; /* круглый элемент */
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border: 3px solid black;
 }
 /*      
 
